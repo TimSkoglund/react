@@ -14,6 +14,9 @@ import Brands from './components/Brands'
 import AppFeatures from './components/AppFeatures'
 import MobileSliders from './components/MobileSliders'
 import FeatureMoney from './components/FeatureMoney'
+import Clients from './components/Clients'
+import Contact from './components/Contact'
+import Email from './components/Email'
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
           <AppFeatures></AppFeatures>
           <MobileSliders></MobileSliders>
           <FeatureMoney></FeatureMoney>
+          <Clients></Clients>
+          <Contact></Contact>
+          <Email></Email>
         </main>
         <Footer />
       </div>

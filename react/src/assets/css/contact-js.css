@@ -1,0 +1,17 @@
+#contactus{
+    background-color:#F3F6FF;
+    .container{
+        
+        .mail-img {
+            background-color: #ffffff;
+            width: 3rem; /* Bestäm storleken på bilden */
+            height: 3rem;
+            border-radius: 50%; /* Gör bilden cirkulär */
+            overflow: hidden; /* Klipp bort överflöd */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+      
+    }
+}

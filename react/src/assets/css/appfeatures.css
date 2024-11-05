@@ -1,0 +1,45 @@
+#App-features {
+  text-align: center;
+
+  .container {
+    padding: 3rem;
+  }
+  .iphone {
+    display: none;
+  }
+  .features-grid {
+    display: grid;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  .feature-card {
+    display: flex;
+    text-align: start;
+    gap: 1rem;
+    align-items: start;
+  }
+  .icon-container {
+    padding: 1rem;
+    flex-shrink: 0;
+  }
+  @media (width > 768px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 3rem;
+    }
+
+    @media (width > 1400px) {
+      text-align: start;
+      .container {
+        display: flex;
+        gap: 10rem;
+      }
+      .iphone {
+        display: block;
+      }
+      .text {
+        flex: 1;
+      }
+    }
+  }
+}

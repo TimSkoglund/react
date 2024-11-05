@@ -11,6 +11,10 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Heroe from './components/Heroe'
 import Brands from './components/Brands'
+import AppFeatures from './components/AppFeatures'
+import MobileSliders from './components/MobileSliders'
+import FeatureMoney from './components/FeatureMoney'
+
 
 function App() {
 
@@ -20,8 +24,11 @@ function App() {
       <div class="wrapper">
         <Header />
         <main>
-    <Heroe></Heroe>
-    <Brands></Brands>
+          <Heroe></Heroe>
+          <Brands></Brands>
+          <AppFeatures></AppFeatures>
+          <MobileSliders></MobileSliders>
+          <FeatureMoney></FeatureMoney>
         </main>
         <Footer />
       </div>

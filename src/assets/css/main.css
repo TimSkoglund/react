@@ -342,7 +342,7 @@ body {
         .slider-box {
           display: none;
         }
-        #mobileslider-2 {
+        #mobileslider2 {
           display: block;
         }
       }
@@ -363,12 +363,12 @@ body {
           display: none;
         }
 
-        #mobileslider-1,
-        #mobileslider-2,
-        #mobileslider-3 {
+        #mobileslider1,
+        #mobileslider2,
+        #mobileslider3 {
           display: block;
         }
-        #mobileslider-2 > * {
+        #mobileslider2 > * {
           max-width: 72%;
         }
       }
@@ -385,14 +385,14 @@ body {
           display: none;
         }
 
-        #mobileslider-1,
-        #mobileslider-2,
-        #mobileslider-3 {
+        #mobileslider1,
+        #mobileslider2,
+        #mobileslider3 {
           display: none;
         }
-        #mobileslider-4,
-        #mobileslider-5,
-        #mobileslider-6 {
+        #mobileslider4,
+        #mobileslider5,
+        #mobileslider6 {
           display: block;
         }
       }

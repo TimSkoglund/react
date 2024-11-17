@@ -22,11 +22,9 @@ const Clients = () => {
     <section id="clients">
       <div className="container">
         <h2 className="client-h2">Clients are Loving Our App</h2>
-        <div className="quotes-box">
           {testimonials.map((testimonial) => (
             <Testimonial key={testimonial.id} item={testimonial} />
           ))}
-        </div>
       </div>
     </section>
   );

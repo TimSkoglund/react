@@ -38,12 +38,14 @@ const Contact = () => {
           </div>
         </div>
 
-        <button className="btn-contact">Contact us now</button>
+        
 
-        {/* Renderar alla FAQ med AccordionItem-komponenter */}
+        <div className="details-container">
         {accordions.map(item => (
           <AccordionItem key={item.id} item={item} />
         ))}
+        </div>
+        <button className="btn-contact">Contact us now</button>
       </div>
     </section>
   )

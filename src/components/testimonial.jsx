@@ -4,7 +4,7 @@ import StarRating from './StarRating';
 
 const Testimonial = ({ item }) => {
   return (
-    <div className="quotes-box-container">
+    <div className="quotes-box">
       <img className="quotes-icon" src={QuotesIcon} alt="" />
         <div className="stars">
         <StarRating starRating={item.starRating} />

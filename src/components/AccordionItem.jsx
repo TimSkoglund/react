@@ -8,7 +8,7 @@ const AccordionItem = ({ item }) => {
   };
 
   return (
-    <div className="details-container">
+
       <details open={isOpen} onToggle={toggleAccordion}>
         <summary>
           {item.title}
@@ -18,7 +18,7 @@ const AccordionItem = ({ item }) => {
         </summary>
         <p>{item.content}</p>
       </details>
-    </div>
+
   );
 };
 

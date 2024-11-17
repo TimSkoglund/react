@@ -1,4 +1,3 @@
-import React from 'react'
 import Brand1 from '../assets/images/brand-1.svg'
 import Brand2 from '../assets/images/brand-2.svg'
 import Brand3 from '../assets/images/brand-3.svg'
@@ -9,23 +8,23 @@ import Brand6 from '../assets/images/brand-6.svg'
 const Brands = () => {
   return (
     <section id="brands">
-        <div class="container">
-            <div id="brand-1" class="brand-box">
+        <div className="container">
+            <div id="brand-1" className="brand-box">
                 <img src={Brand1} alt="" />
             </div>
-            <div id="brand-2" class="brand-box">
+            <div id="brand-2" className="brand-box">
                 <img src={Brand2} alt="" />
             </div>
-            <div id="brand-3" class="brand-box">
+            <div id="brand-3" className="brand-box">
                 <img src={Brand3} alt="" />
             </div>
-            <div id="brand-4" class="brand-box">
+            <div id="brand-4" className="brand-box">
                 <img src={Brand4} alt="" />
             </div>
-            <div id="brand-5" class="brand-box">
+            <div id="brand-5" className="brand-box">
                 <img src={Brand5} alt="" />
             </div>
-            <div id="brand-6" class="brand-box">
+            <div id="brand-6" className="brand-box">
                 <img src={Brand6} alt="" />
             </div>
         </div>

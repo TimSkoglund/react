@@ -1,4 +1,3 @@
-import React from 'react'
 import Checkcircle from '../assets/images/check-circle.svg'
 import FeaturesBild2 from '../assets/images/features-bild2.svg'
 import FeaturesBild1 from '../assets/images/features-bild1.svg'

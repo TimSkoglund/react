@@ -1,4 +1,3 @@
-import React from 'react'
 import IphoneAppBild from '../assets/images/iphone-app-bild.svg'
 import App1 from '../assets/images/app-1.svg'
 import App2 from '../assets/images/app-2.svg'

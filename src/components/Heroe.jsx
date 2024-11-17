@@ -1,4 +1,3 @@
-import React from 'react'
 import AppStore from '../assets/images/appstore.svg'
 import GooglePlay from '../assets/images/googleplay.svg'
 import MyBudget from '../assets/images/iPhone mybudget.svg'
@@ -30,8 +29,8 @@ const Heroe = () => {
         </div>
 
         <div className="images">
-            <img className="img-back"img src={MyBudget}alt="iphone my budget"/>
-            <img className="img-front"img src={YourCards}alt="iphone your cards"/>
+            <img className="img-back" src={MyBudget}alt="iphone my budget"/>
+            <img className="img-front" src={YourCards}alt="iphone your cards"/>
       </div>
     </div>
   </section>

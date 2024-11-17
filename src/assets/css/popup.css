@@ -1,0 +1,38 @@
+/* Wrapper to contain the button and popup */
+.popup-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Popup box positioned next to the button */
+.popup {
+  position: absolute;
+  top: 100%; /* Positions below the button */
+  right: 0; /* Aligns to the right edge of the button */
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+/* Popup link styling */
+.popup ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup ul li {
+  margin: 0.5rem 0;
+}
+
+.popup a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.popup a:hover {
+  text-decoration: underline;
+}

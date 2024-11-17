@@ -1,4 +1,3 @@
-import React from 'react'
 import EmailBell from '../assets/images/email-bell.svg'
 
 const Email = () => {
@@ -14,8 +13,12 @@ const Email = () => {
                 </div>
             </div>
         <div className="input-group">
-            <input className="form-input email"type="Email"placeholder="Your Email"/>
-            <button className="btn-email">Subscribe</button>
+            <div>
+                <input className="form-input email"type="Email"placeholder="Your Email"/>
+            </div>
+            <div>
+                <button className="btn-email">Subscribe</button>
+            </div>
         </div>
     </div>
 </section>

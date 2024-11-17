@@ -1,4 +1,3 @@
-import React from 'react'
 import ContactTelefonIcon from '../assets/images/contact-telefon-icon.svg'
 import ContactTextIcon from '../assets/images/contact-text-icon.svg'
 
@@ -19,7 +18,7 @@ const Contact = () => {
               </div>
               <div className="contact-box">
                 <img src={ContactTextIcon} alt="" />
-                <p>Don't like phone calls?</p>
+                <p>Don&apos;t like phone calls?</p>
                 <a className="contact-us" href="Contact us">Contact us<span><i className="fa-solid fa-arrow-right"></i></span></a>
               </div>
             </div>

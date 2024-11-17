@@ -2,6 +2,7 @@ import QuotesIcon from '../assets/images/quotes-icon.svg'
 import RatingStars from '../assets/images/rating-stars.svg'
 import FannieIcon from '../assets/images/fannie-icon.svg'
 import AlbertIcon from '../assets/images/albert-icon.svg'
+import { Link } from 'react-router-dom';
 
 const Clients = () => {
   return (
@@ -19,7 +20,7 @@ const Clients = () => {
                 </p>
                 <img className="icon" src={FannieIcon} alt=""/>
                 <p className="client-name">Fannie Summers</p>
-                <p className="client-className">Designer</p>
+                <p className="client-class">Designer</p>
             </div>
 
             <div className="quotes-box">
@@ -33,7 +34,7 @@ const Clients = () => {
                 </p>
                 <img className="icon" src={AlbertIcon} alt=""/>
                 <p className="client-name">Albert Flores</p>
-                <p className="client-className">Developer</p>
+                <p className="client-class">Developer</p>
             </div>
         </div>
     </section>

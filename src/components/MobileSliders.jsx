@@ -1,4 +1,3 @@
-import React from 'react'
 import MobileSlider1 from '../assets/images/mobile-slider-1.svg'
 import MobileSlider2 from '../assets/images/mobile-slider-2.svg'
 import MobileSlider3 from '../assets/images/mobile-slider-3.svg'
@@ -9,8 +8,8 @@ import DesktopSlider3 from '../assets/images/desktop-slider-3.svg'
 const MobileSliders = () => {
   return (
     <section id="slider">
-          <div class="container">
-            <div class="headline">
+          <div className="container">
+            <div className="headline">
               <h2>How Does It Work?</h2>
         <section id="mobileslider">
             <div id="container">
@@ -35,7 +34,7 @@ const MobileSliders = () => {
             </div>
         </section>
         </div>
-        <div class="content">
+        <div className="content">
             <h3>Step 3. Transfers to people from your contact list</h3>
             <p>
             Proin volutpat mollis egestas. Nam luctus facilisis ultrices.

@@ -1,45 +1,29 @@
-import './assets/css/main.css'
-import './assets/css/appfeatures.css'
-import './assets/css/button.css'
-import './assets/css/clients.css' 
-import './assets/css/contact-js.css'
-import './assets/css/contact.css'
-import './assets/css/email.css'
-import './assets/css/featuresmoney.css'
-import './assets/css/hero.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Heroe from './components/Heroe'
-import Brands from './components/Brands'
-import AppFeatures from './components/AppFeatures'
-import MobileSliders from './components/MobileSliders'
-import FeatureMoney from './components/FeatureMoney'
-import Clients from './components/Clients'
-import Contact from './components/Contact'
-import Email from './components/Email'
-
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './pages/Main/Main';
+import ContactUs from './pages/ContactUs/ContactUs';
+import { initializeDarkMode } from './utils/darkmode';
 
 function App() {
-
+  useEffect(() => {
+    initializeDarkMode();
+  }, []); // Runs only once on initial load
 
   return (
-    <>
-      <div class="wrapper">
+    <Router>
+      <div className="wrapper">
         <Header />
-        <main>
-          <Heroe></Heroe>
-          <Brands></Brands>
-          <AppFeatures></AppFeatures>
-          <MobileSliders></MobileSliders>
-          <FeatureMoney></FeatureMoney>
-          <Clients></Clients>
-          <Contact></Contact>
-          <Email></Email>
-        </main>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
         <Footer />
       </div>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

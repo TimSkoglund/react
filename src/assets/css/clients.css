@@ -1,9 +1,12 @@
 #clients {
+  display: block;
+
   @media (max-width: 1399px) {
     display: none;
   }
 
   background-color: var(--color-background-grey);
+
   .container {
     display: flex;
     align-items: center;
@@ -12,14 +15,19 @@
     padding-top: 4rem;
 
     .quotes-box {
+      display: flex;
       margin: 1.5rem;
       background-color: var(--color-wite);
-      border: none;
+      border: 1px var(--color-wite);
       padding: 2rem;
       border-radius: 8px;
       height: auto;
-      width: 580px;
+      width: 80rem;
     }
+    quotes-box-container{
+      
+    }
+
     .client-h2 {
     }
 
@@ -31,6 +39,7 @@
 
     .rating {
     }
+
     .icon {
       padding-top: 1.5rem;
     }
@@ -39,7 +48,9 @@
       font-weight: bold;
     }
 
-    .client-class {
+    .client-className {
     }
+    .stars
+    color: #FFFF00;
   }
 }

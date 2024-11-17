@@ -1,5 +1,5 @@
 #contactus {
-    --color-background-grey: #f3f6ff;
+    background-color: var(--color-background-grey);
     padding: 2.5rem;
 }
 

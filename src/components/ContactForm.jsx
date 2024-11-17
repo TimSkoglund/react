@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { emailPattern } from "../utils/patterns";
 
 function ContactForm() {
   const [fullName, setFullName] = useState('');
@@ -19,10 +20,18 @@ function ContactForm() {
 
   const handleSubmitForm = (event) => {
     event.preventDefault();
-    console.log('Full Name:', fullName);
-    console.log('Email:', email);
-    console.log('Specialist:', specialist);
-  }
+
+    if (fullName === '') {
+      alert('Please enter your full name');
+      return;
+    }
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
+
+    alert('Thank you for making an appointment!');
+  }
 
   return (
     <div className="form-container">

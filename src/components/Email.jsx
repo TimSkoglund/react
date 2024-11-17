@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import EmailBell from '../assets/images/email-bell.svg'
+import {emailPattern} from '../utils/patterns';
 
 const Email = () => {
   const [subscribe, setSubscribe] = useState('');
@@ -10,9 +11,13 @@ const Email = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log('Subscribe:', subscribe); 
-  }
+    if (!emailPattern.test(subscribe)) {
+      alert('Please enter a valid email address');
+      return;
+    }
 
+    alert('Thank you for subscribing!');
+  }
   return (
     <section id="emailsection">
       <div className="container">
@@ -27,13 +32,7 @@ const Email = () => {
 
         <form className="input-group" onSubmit={handleSubmit}>
           <div>
-            <input
-              className="form-input email"
-              type="email"
-              placeholder="Your Email"
-              value={subscribe}
-              onChange={handleChange}
-            />
+            <input className="form-input email"type="email"placeholder="Your Email"value={subscribe}onChange={handleChange}/>
           </div>
           <div>
             <button type="submit" className="btn-email">Subscribe</button>
